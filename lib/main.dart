@@ -54,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void _startAddNewTransaction(BuildContext ctx) {
     showModalBottomSheet(
       context: ctx,
-      builder: (bCtx) {
+      builder: (_bCtx) {
         return NewTransaction(_addTransaction);
         // return GestureDetector(
         //   onTap: () {},
@@ -90,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 elevation: 5,
               ),
             ),
-            NewTransaction(_addTransaction),
+            // NewTransaction(_addTransaction),
             TransactionList(_userTransaction),
           ],
         ),
